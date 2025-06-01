@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - View Parcels</title>
+</head>
+<body>
+    <h2>Parcel Bookings</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Phone</th>
+        </tr>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking.name }}</td>
+            <td>{{ booking.item }}</td>
+            <td>{{ booking.quantity }}</td>
+            <td>{{ booking.phone }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

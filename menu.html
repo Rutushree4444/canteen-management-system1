@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Today's Menu</title>
+</head>
+<body>
+    <h1>Today's Menu</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item.name }} - ₹{{ item.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
